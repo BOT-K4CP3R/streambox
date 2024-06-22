@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "http": "^0.0.1-security",
+    "node-media-server": "^2.7.0",
+    "os": "^0.1.2",
+    "socket.io-client": "^4.7.5",
+    "systeminformation": "^5.22.10",
+    "ws": "^8.17.0"
+  },
+  "name": "streambox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BOT-K4CP3R/streambox.git"
+  },
+  "keywords": [
+    "belabox",
+    "streambox",
+    "irl",
+    "backpack"
+  ],
+  "author": "botk4cp3r",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BOT-K4CP3R/streambox/issues"
+  },
+  "homepage": "https://github.com/BOT-K4CP3R/streambox#readme",
+  "description": "A streaming client for StreamBox ecosystem"
+}

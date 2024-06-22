@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StreamBox</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+</head>
+<body>
+  <div id="passwordBox" class="card">
+    <div id="errorBoxPassword" class="card" style="display: none;"></div>
+    <input type="password" id="passwordInput" placeholder="Enter Password">
+    <button id="passwordButton">Submit</button>
+  </div>
+  <div id="mainContent" style="display: none;">
+    <div id="errorBox" class="card"></div>
+    <div id="startStop" class="card">
+      <button id="toggleButton" class="start">Start</button>
+    </div>
+    <div id="controls" class="card">
+      <div class="ControlsSlider"></div>
+      <input type="range" id="bitrateSlider" min="500" max="12000" step="250" value="6000">
+      <span id="bitrateValue">???? kb/s</span>
+      <input type="text" id="rtmpUrl" placeholder="ENTER YOUR SERVER URL" size="50">
+    </div>
+    <div id="sourceOptions" class="card">
+      <label for="videoSource"><strong>Video settings:</strong></label>
+      <select id="videoSource">
+        <option value="rtmp_localhost_live_streambox">rtmp_localhost_live_streambox</option>
+        <option value="test_pattern">test_pattern</option>
+      </select>
+      <label for="audioSource"><strong>Audio source:</strong></label>
+      <select id="audioSource">
+        <option value="test_tone">test_tone</option>
+        <option value="no_audio">no_audio</option>
+      </select>
+    </div>  
+    <div id="bitrate" class="card">
+      <strong>Bitrate:</strong> <span id="currentBitrate">0 kb/s</span>
+    </div>
+    <div id="cpuTemperature" class="card"></div>
+    <div id="networkInfo" class="card">
+      <div id="networkInterfacesContainer"></div>
+    </div>
+    <div id="controls" class="card">
+      <strong>Remote control:</strong>
+      <input type="text" id="pilotUrl" placeholder="ENTER YOUR SERVER WEBSOCKET" size="50">
+    </div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>

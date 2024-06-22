@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #E0E0E0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  margin: 10px;
+  padding: 20px;
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+#passwordBox input {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1em;
+  color: #E0E0E0;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+}
+
+#passwordBox button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #E0E0E0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: green;
+}
+
+#startStop {
+  margin: 20px;
+  padding: 20px;
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+#controls input {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1em;
+  color: #E0E0E0;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+}
+
+#toggleButton {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #E0E0E0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: green;
+}
+
+#rtmpUrl, #pilotUrl {
+  width: calc(100% - 22px);
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#controls input[type="range"] {
+  margin-bottom: 10px;
+}
+
+#bitrateValue {
+  margin-bottom: 10px;
+}
+
+#bitrate strong {
+  font-size: 1.2em;
+}
+
+#cpuTemperature p,
+#networkInfo p {
+  margin: 10px 0;
+}
+
+#toggleButton.start {
+  background-color: green;
+}
+
+#toggleButton.stop {
+  background-color: red;
+}
+
+#errorBox,#errorBoxPassword {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 20px;
+  background-color: #FF4444;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 300px;
+  display: none;
+}
+
+#sourceOptions select {
+  padding: 10px;
+  font-size: 1em;
+  color: #E0E0E0;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: calc(100% - 22px);
+}
+
+#sourceOptions select:focus {
+  outline: none;
+}
