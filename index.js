@@ -24,6 +24,6 @@ const nms = new NodeMediaServer({
 
 nms.run();
 
-app.listen(80, function () {
-  console.log('Listening on http://192.168.0.129');
+app.listen(8080, function () {
+  console.log('Started');
 });
