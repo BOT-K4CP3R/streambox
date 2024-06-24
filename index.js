@@ -24,6 +24,6 @@ const nms = new NodeMediaServer({
 
 nms.run();
 
-app.listen(8080, function () {
+app.listen(80, function () {
   console.log('Started');
 });
